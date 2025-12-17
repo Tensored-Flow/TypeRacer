@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Racer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Type Racer</h1>
+
+        <!-- Timer Selection -->
+        <div class="timer-buttons">
+            <button class="timer-btn" data-time="10">10s</button>
+            <button class="timer-btn active" data-time="15">15s</button>
+            <button class="timer-btn" data-time="30">30s</button>
+            <button class="timer-btn" data-time="60">60s</button>
+            <button class="timer-btn" data-time="120">120s</button>
+        </div>
+
+        <div id="word-display"></div>
+
+        <input id="typing-input" type="text" autocomplete="off" placeholder="Start typing..." disabled />
+
+        <div class="stats">
+            <div>Time: <span id="time">15</span>s</div>
+            <div>WPM: <span id="wpm">0</span></div>
+            <div>Accuracy: <span id="accuracy">100</span>%</div>
+        </div>
+
+        <button id="start-btn">Start Test</button>
+        <button id="repeat-btn" style="display:none;">Repeat Test</button>
+
+        <!-- History -->
+        <h2>History</h2>
+        <div id="history"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

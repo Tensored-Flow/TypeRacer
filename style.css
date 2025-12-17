@@ -1,0 +1,102 @@
+body {
+    background: #1a1a1a;
+    color: #eee;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 750px;
+    max-width: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.timer-buttons {
+    margin-bottom: 15px;
+}
+
+.timer-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.timer-btn.active {
+    background: #4caf50;
+}
+
+#word-display {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px;
+    line-height: 2;
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.correct-letter {
+    color: #4caf50;
+}
+
+.incorrect-letter {
+    color: #ff5252;
+}
+
+.current-word {
+    border-bottom: 2px solid #4caf50;
+}
+
+#typing-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.stats {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #43a047;
+}
+
+#history {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
+    background:#222;
+    padding: 10px;
+    border-radius: 8px;
+}
